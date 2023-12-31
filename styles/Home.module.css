@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ffb6;
+    width: 100%;
+    height: 780vh;
+}
+
+.logo,
+.cadre .info {
+    scroll-snap-align: start;
+}
+
+
+/* logo section */
+
+.logo {
+    position: absolute;
+    top: 20%;
+}
+
+.logo1 {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 180px;
+    text-align: center;
+    color: #1D1D1D;
+}
+
+.logo2 {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #212121;
+    position: absolute;
+    left: 48%;
+    bottom: 10%;
+}
+
+.logo2::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #1D1D1D;
+    position: absolute;
+    left: 0%;
+    bottom: 45%;
+}
+
+.logo1::selection,
+.logo2::selection,
+.first::selection,
+.second::selection,
+.third::selection,
+.forth::selection,
+.fifth::selection {
+    background-color: #212121;
+    color: #00ffb6;
+}
+
+/* hero section */
+
+.cadre {
+    width: 60%;
+    height: 74%;
+    border: 1px solid #181818;
+    position: absolute;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 3.1em;
+    line-height: 61px;
+    text-align: center;
+    color: #212121;
+}
+
+.cadre::after {
+    content: '↓';
+    font-style: normal;
+    position: absolute;
+    bottom: 0%;
+    left: 46.6%;
+    text-align: center;
+    justify-content: center;
+}
+
+.first,
+.second,
+.third,
+.forth,
+.fifth {
+    margin-top: 2.5%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@keyframes fly {
+    from,
+    to {
+        top: 69%;
+        left: 50%;
+    }
+    50% {
+        top: 65%;
+        left: 37%;
+    }
+}
+
+
+/* FAQ */
+
+.cont {
+    position: absolute;
+    top: 355%;
+    width: 65%;
+    height: 60%;
+}
+
+.cont>h1 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 80px;
+    color: #212121;
+}
+
+.faq {
+    background-color: #00ef8b;
+    border: 1px solid #181818;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answers {
+    color: #212121;
+    font-size: 1.2rem;
+}
+
+.flex {
+    position: absolute;
+    top: 740%;
+    width: 70%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    gap: 3%;
+    grid-template-areas: 'phrase logo';
+}
+
+.flex>div:nth-child(1) {
+    grid-area: phrase;
+    background-color: transparent;
+    background-image: url(https://cdn.discordapp.com/attachments/941095160517894185/1076966018074812546/Proudly_Built_on_Flow.png);
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flex>div:nth-child(2) {
+    grid-area: logo;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.flow {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(https://cdn.discordapp.com/attachments/941095160517894185/1076967234087419956/Vector.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flow2 {
+    width: 120px;
+    height: 120px;
+    background: url(https://cdn.discordapp.com/attachments/941095160517894185/1076969782861119548/logo-flow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #212121;
+    opacity: .8;
+}
